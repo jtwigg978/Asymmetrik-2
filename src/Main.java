@@ -6,11 +6,12 @@ public class Main {
      */
     public static void main(String[] args) {
 	    String passage = "The third thing that I need to tell you is that this thing does not think thoroughly.";
-
+	    String fragment = "th";
+	    
 	    AutocompleteProvider auto = new AutocompleteProvider();
 
         auto.train(passage);
-        System.out.println(auto.getWords("th"));
+        System.out.println(auto.getWords(fragment));
 
     }
 }
