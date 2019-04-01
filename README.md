@@ -3,14 +3,6 @@ Author: Jacob Twigg
 
 In the src folder, the three classes used for the exercise can be found. The Main.java class is the driver, which is where you will be able to test any sentence that you would like. The src folder just needs to be downloaded, compiled, and then Main should be run. The "passage" String that is defined in Main can be changed to whatever sentence or paragraph the user desires to test. The "figment" String can also be changed to the section of a word that will be tested for the autocomplete. 
 
-The autocomplete provider will suggest any words that contain the fragment. Word with special characters 
+The autocomplete provider will suggest any words that contain the fragment. Words with special characters such as dashes (-) and apostrophes (') will be autocompleted with those special characters in mind. For example, "Wouldn't" will be suggest with the apostrophe. Also, numbers are also allowed to be suggested. This is because some people may type using numbers, such as "Gr8". This will be autocompleted from "gr". This functionality can be easily removed if necessary by slightly changing the regex used in AutocompleteProvider.java. 
 
-
-
-
-
-I have the 3 files I used in this project on this page. There is the Main driver, which is what initializes all of the objects and where the document to be parsed is introduced. In order to run this program, you will have to change the text file path to wherever necessary. I had a file created on my desktop, where I tested different inputs that would then be sent into the program as a String variable "document". With all 3 files downloaded in the same project, the only change necessary is this file path and it should run. I also have a ContactInfo class, which basically only consists of getters and setters for the ContactInfo object. And lastly, I have a BusinessCardParser class, where most of the code is. I used this class to find all of the information from the document necessary, before sending it back to the driver and having it printed.
-
-If no name is inputted, then the name field will print as "null". If no phone is inputted, then there will be no number displayed. And lastly, if there is no email, then both the email and name fields will be "null". This is due to the fact that I thought the best way of finding out which line the name was on is through the email address. The code will work and output everything as long as all 3 of those are inputted somewhere in the document - which I believe would be on every business card anyways.
-
-I apologize if my files are not formatted correctly on github, I have never uploaded a document here before. However, I think that it should all work correctly.
+A few JUnit tests I created and used have been included in the Tests folder as well. 
