@@ -1,7 +1,9 @@
 # Asymmetrik Programming Challenge Mobile Device Keyboard 
 Author: Jacob Twigg 
 
-In the src folder, the three classes used for the exercise can be found. The Main.java class is the driver, which is where you will be able to test any sentence that you would like. The src folder just needs to be downloaded, compiled, and then Main should be run. The "passage" String that is defined in Main can be changed to whatever necessary. After changed and run, the program will output 
+In the src folder, the three classes used for the exercise can be found. The Main.java class is the driver, which is where you will be able to test any sentence that you would like. The src folder just needs to be downloaded, compiled, and then Main should be run. The "passage" String that is defined in Main can be changed to whatever sentence or paragraph the user desires to test. The "figment" String can also be changed to the section of a word that will be tested for the autocomplete. 
+
+The autocomplete provider will suggest any words that contain the fragment. Word with special characters 
 
 
 
