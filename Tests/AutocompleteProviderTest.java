@@ -46,4 +46,13 @@ class AutocompleteProviderTest {
         assertEquals(auto.getWords("te"), caps);
     }
 
+    @Test
+    public void numbersTest() {
+        AutocompleteProvider auto = new AutocompleteProvider();
+        List<Candidate> caps = new LinkedList<Candidate>(Arrays.asList(new Candidate("gr8", 1)));
+
+        auto.train("I think its so gr8 that you're doing that.");
+        assertEquals(auto.getWords("gr"), caps);
+    }
+
 }
