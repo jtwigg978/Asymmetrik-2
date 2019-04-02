@@ -55,4 +55,15 @@ class AutocompleteProviderTest {
         assertEquals(auto.getWords("gr"), caps);
     }
 
+    @Test
+    public void multipleTrains() {
+        AutocompleteProvider auto = new AutocompleteProvider();
+        List<Candidate> cands = new LinkedList<Candidate>(Arrays.asList(new Candidate("this", 2),
+                new Candidate("thing", 2), new Candidate("the", 2)));
+
+        auto.train("I am going to train this thing twice.");
+        auto.train("Now this is the second training of the thing.");
+        assertEquals(auto.getWords("th"), cands);
+    }
+
 }
